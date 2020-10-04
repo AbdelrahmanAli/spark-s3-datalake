@@ -92,6 +92,7 @@ There are two datasets residing in S3:
 ## Tables
 ### Dimension Tables
 - Dimension tables are loaded from source S3 bucket
+- These tables are not actual tables, they are folders and I use Spark's Schema-On-Read feature to process them
 - We have 1 fact table and 4 dimension tables:
  - `songplays`: Fact table - Contains all logged events related to playing a song
  - `users`: Dimension table - Contains data of all users
